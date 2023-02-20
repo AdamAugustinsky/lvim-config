@@ -11,18 +11,14 @@ lvim.keys.normal_mode = {
   -- Page down/up
   ["[d"] = "<PageUp>",
   ["]d"] = "<PageDown>",
-
   -- Disable default navigation
   ["<S-l>"] = false,
   ["<S-h>"] = false,
-
   -- Navigate buffers
   ["<Tab>"] = ":bnext<CR>",
   ["<S-Tab>"] = ":bprevious<CR>",
-
   -- Copilot panel
   ["<C-space>"] = ":Copilot panel<CR>",
-
   -- learn to use :w
   -- ["<C-s>"] = ":w<cr>"
 }
@@ -112,7 +108,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "java",
   "yaml",
   "prisma",
-  "vue",
+  "svelte",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -131,15 +127,14 @@ lvim.lsp.installer.setup.ensure_installed = {
 
 
 require("lvim.lsp.null-ls.formatters").setup {
-  { exe = "eslint_d", filetypes = { "typescript", "javascript", "vue" } }
-
+  { exe = "prettierd", filetypes = { "typescript", "javascript", "svelte" } }
 }
 
 require("lvim.lsp.null-ls.linters").setup {
-  { exe = "eslint_d", filetypes = { "typescript", "javascript", "vue" } },
+  { exe = "eslint_d", filetypes = { "typescript", "javascript", "svelte" } },
 }
 
-
+require("lvim.lsp.manager").setup "tailwindcss"
 
 lvim.plugins = {
   -- {
