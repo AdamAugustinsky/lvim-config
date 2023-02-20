@@ -181,7 +181,8 @@ lvim.plugins = {
   },
 }
 
-
+lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
+table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
 
 local components = require("lvim.core.lualine.components")
 
