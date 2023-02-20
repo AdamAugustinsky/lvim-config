@@ -101,7 +101,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "json",
   "lua",
   "python",
-  "typescript",
+  -- "typescript",
   "tsx",
   "css",
   "rust",
@@ -124,7 +124,6 @@ lvim.lsp.installer.setup.ensure_installed = {
   "prismals",
   "tailwindcss",
 }
-
 
 require("lvim.lsp.null-ls.formatters").setup {
   { exe = "prettierd", filetypes = { "typescript", "javascript", "svelte" } }
