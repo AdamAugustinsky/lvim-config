@@ -90,6 +90,7 @@ lvim.builtin.terminal.direction = "tab"
 lvim.builtin.terminal.open_mapping = [[<c-t>]]
 lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
+lvim.builtin.nvimtree.setup.view.width = 40
 lvim.builtin.which_key.active = true
 
 
@@ -139,7 +140,7 @@ lvim.plugins = {
   -- {
   --   'wthollingsworth/pomodoro.nvim',
   --   requires = 'MunifTanjim/nui.nvim'
-  -- },
+  -- }Migrate from NerdTree to NvimTree - 涛叔,
   { 'ellisonleao/gruvbox.nvim' },
   {
     "ThePrimeagen/refactoring.nvim",
